@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>XTRUYEN - Đọc truyện online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <div class="topbar-inner container">
+      <div class="topbar-left">
+        <div class="logo">
+          <div class="logo-circle">
+            <img src = "xlogo.png" alt = "X logo">
+          </div>
+          <div class="logo-text">
+            <div class="logo-line1">TRUYỆN</div>
+          </div>
+        </div>
+
+        <nav class="main-nav">
+          <div class="nav-item has-sub">
+            <span class="nav-icon">☰</span>
+            <span>Danh sách</span>
+          </div>
+          <div class="nav-item has-sub">
+            <span class="nav-icon">📚</span>
+            <span>Thể Loại</span>
+          </div>
+          <div class="nav-item has-sub">
+            <span class="nav-icon">👤</span>
+            <span>Tài khoản</span>
+          </div>
+          <div class="nav-item theme-toggle">
+            <span class="moon">🌙</span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="topbar-right">
+        <div class="search-box">
+          <input type="text" placeholder="Bạn muốn đọc truyện nào ?" class="search-input" />
+          <button class="search-btn">🔍</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="page container">
+
+    <!-- ROW 1: GỢI Ý + SIDEBAR -->
+    <section class="row-top">
+
+      <!-- LEFT BLOCK -->
+      <div class="suggest-block">
+        <div class="suggest-head">
+          <div class="suggest-head-left">
+            <select class="suggest-select">
+              <option>GỢI Ý BẠN</option>
+              <option>TRUYỆN HOT</option>
+              <option>TRUYỆN MỚI</option>
+            </select>
+
+            <div class="suggest-desc">
+              Website đọc truyện online miễn phí. Cập nhật liên tục.
+            </div>
+          </div>
+
+          <div class="suggest-head-right">
+            <label class="filter-label">
+              <span class="filter-text">TẤT CẢ</span>
+              <span class="filter-caret">▼</span>
+              <select class="filter-select">
+                <option>TẤT CẢ</option>
+                <option>Tiên Hiệp</option>
+                <option>Ngôn Tình</option>
+                <option>Đô Thị</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- GRID 5 COL x 2 ROW -->
+        <div class="book-grid">
+          <!-- card -->
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/chọc túc vợ vợ yêu.jpg" alt="Chọc Tức Vợ Yêu" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Chọc Tức Vợ Yêu – Mua Một Tặng Một</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/than-dao-dan-ton.jpg" alt="Thần Đạo Đan Tôn" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Thần Đạo Đan Tôn</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/tien-nghich.jpg" alt="Tiên Nghịch" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Tiên Nghịch</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/de-ba.jpg" alt="Đế Bá" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Đế Bá</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/pham-nhan-tu-tien.jpg" alt="Phàm Nhân Tu Tiên" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Phàm Nhân Tu Tiên</div>
+          </div>
+
+          <!-- row 2 -->
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/linh-vu-thien-ha.jpg" alt="Linh Vũ Thiên Hạ" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Linh Vũ Thiên Hạ</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/co-vo-ngot-ngao-co-chut-bat-luong-vo-moi-bat-luong-co-chut-ngot.jpg" alt="Cô Vợ Ngọt Ngào Có Chút Bất Lương" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Cô Vợ Ngọt Ngào Có Chút Bất Lương</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/the-gioi-hoan-my.jpg" alt="Thế Giới Hoàn Mỹ" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Thế Giới Hoàn Mỹ</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/ngao-the-dan-than.jpg" alt="Ngạo Thế Đan Thần" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Ngạo Thế Đan Thần</div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-thumb">
+              <img src="image/me-vo-khong-loi-ve-982891.jpg" alt="Mê Vợ Không Lối Về" />
+              <div class="book-icon-left">✔</div>
+              <div class="book-icon-right">▶</div>
+            </div>
+            <div class="book-name">Mê Vợ Không Lối Về</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-box reading-box">
+          <div class="sidebar-title-row">
+            <div class="sidebar-title">TRUYỆN ĐANG ĐỌC</div>
+            <div class="sidebar-more">›</div>
+          </div>
+
+          <ul class="reading-list">
+            <li>
+              <span class="reading-name">Chọc Tức Vợ Yêu – Mua M...</span>
+              <a href="#" class="reading-chapter">Chương 1</a>
+            </li>
+            <li>
+              <span class="reading-name">Đại Phụng Đả Canh Nhân</span>
+              <a href="#" class="reading-chapter">Chương 1</a>
+            </li>
+            <li>
+              <span class="reading-name">Đấu Phá Thương Khung</span>
+              <a href="#" class="reading-chapter">Chương 1</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box cat-box">
+          <div class="sidebar-title">THỂ LOẠI</div>
+          <div class="cat-grid">
+            <ul>
+              <li>› Tiên Hiệp</li>
+              <li>› Ngôn Tình</li>
+              <li>› Quan Trường</li>
+              <li>› Khoa Huyễn</li>
+              <li>› Huyền Huyễn</li>
+              <li>› Dị Năng</li>
+              <li>› Lịch Sử</li>
+              <li>› Xuyên Nhanh</li>
+              <li>› Trọng Sinh</li>
+              <li>› Linh Dị</li>
+              <li>› Sủng</li>
+              <li>› Nữ Cường</li>
+              <li>› Đông Phương</li>
+            </ul>
+            <ul>
+              <li>› Kiếm Hiệp</li>
+              <li>› Đam Mỹ</li>
+              <li>› Võng Du</li>
+              <li>› Hệ Thống</li>
+              <li>› Dị Giới</li>
+              <li>› Quân Sự</li>
+              <li>› Xuyên Không</li>
+              <li>› Trinh Thám</li>
+              <li>› Thám Hiểm</li>
+              <li>› Ngược</li>
+              <li>› Cung Đấu</li>
+              <li>› Gia Đấu</li>
+              <li>› Đô Thị</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- ===== MỚI CẬP NHẬT ===== -->
+    <section class="latest-section">
+      <div class="latest-head">
+        <div class="latest-left">
+          <div class="latest-title">MỚI CẬP NHẬT</div>
+          <div class="arrow-more">›</div>
+        </div>
+
+        <div class="latest-filter">
+          <label class="filter-label">
+            <span class="filter-text">TẤT CẢ</span>
+            <span class="filter-caret">▼</span>
+            <select class="filter-select">
+              <option>TẤT CẢ</option>
+              <option>Tiên Hiệp</option>
+              <option>Ngôn Tình</option>
+              <option>Đô Thị</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <!-- 2-column list giống ảnh -->
+      <div class="latest-list-wrapper">
+        <ul class="latest-col">
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+              <div class="latest-icon-right">▶</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Gia Tộc Tu Tiên, Lăng Vân Cửu Thiên
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Chương 1074 - phá con rối</a>
+                <span class="latest-time">4 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Cổ Đại</span>
+                <span>📌 Huyền Huyễn</span>
+                <span>📌 Đại Hành Sơn Thượng</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Huyện Lệnh Khởi Bước, Ta Ở Tiên Triều Cùng...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Chương 564 - danh thợ kế hoạch</a>
+                <span class="latest-time">23 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Cổ Đại</span>
+                <span>📌 Tiên Hiệp</span>
+                <span>📌 Lão Ngô Tiên Trường</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Trafford Mãi Gia Câu Lạc Bộ
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Quyển 15 Chương 1977</a>
+                <span class="latest-time">49 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Đô Thị</span>
+                <span>📌 Tịch Sơn Bạch Thạch</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Đại Đạo Như Thanh Thiên...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Chương 498</a>
+                <span class="latest-time">57 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Cổ Đại</span>
+                <span>📌 Tiên Hiệp</span>
+                <span>📌 Tất Viên Hoa Tường</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Vững Vàng Tu Tiên, Toàn Bộ Tu Tiên Giới...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <span class="latest-badge">NEW</span>
+                <a href="#" class="chapter-link">Chương 36</a>
+                <span class="latest-time">1 giờ</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Tiên Hiệp</span>
+                <span>📌 Sơn Nhân Hữu Diệu Kế</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Trọng Phản 88: Tòng Nghênh Thú Tiểu Di Từ...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Chương 738 - thề kỹ tâm</a>
+                <span class="latest-time">2 giờ</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Đô Thị</span>
+                <span>📌 Oa Ngưu Nhĩ Biệt Bão</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="latest-col">
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+              <div class="latest-icon-right">▶</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Tu Tiên: Ta Ở Vân Cương Dưỡng Tiên Tằm
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">Chương 596 - tù nhân</a>
+                <span class="latest-time">36 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Cổ Đại</span>
+                <span>📌 Tiên Hiệp</span>
+                <span>📌 Bạch Hạo Dã</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+              <div class="latest-icon-right">▶</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Sống Sót Trong Trò Chơi Với Tư Cách Một...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">
+                  Quyển 106 Chương 675 - Giấc mơ
+                </a>
+                <span class="latest-time">49 phút</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Huyền Huyễn</span>
+                <span>📌 Jung Yun-kang</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+              <div class="latest-icon-right">▶</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Tu Tiên: Ta Khí Hải Nội Có Đoàn Đất Đỏ
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">
+                  Chương 479 - mê hoặc ngoại nguồn
+                </a>
+                <span class="latest-time">19/10/2025</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Cổ Đại</span>
+                <span>📌 Huyền Huyễn</span>
+                <span>📌 Vi Ảnh</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Trùng Sinh Mạt Thế: Khai Cục Trúng Tướng 3000...
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">
+                  Chương 2116 - "Tăng cường quân bị..."
+                </a>
+                <span class="latest-time">2 giờ</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Khoa Huyễn</span>
+                <span>📌 Lục Căn Cửu Thái</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="latest-item">
+            <div class="latest-cover">
+              <img src="https://via.placeholder.com/60x80?text=Bia" alt="">
+              <div class="latest-icon-left">✔</div>
+              <div class="latest-icon-right">▶</div>
+            </div>
+            <div class="latest-info">
+              <div class="latest-topline">
+                <span class="latest-name">
+                  Ô Long Sơn Tu Hành Bút Ký
+                </span>
+              </div>
+              <div class="latest-chapter">
+                <a href="#" class="chapter-link">
+                  Quyển 2 Chương 542 - Xác nhận Cảnh Chiêu
+                </a>
+                <span class="latest-time">2 giờ</span>
+              </div>
+              <div class="latest-tags">
+                <span>📌 Tiên Hiệp</span>
+                <span>📌 Bát Báo Phạn</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="latest-more-row">
+        <button class="latest-more-btn">
+          Xem Thêm ▼
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== TRUYỆN FULL HOT ===== -->
+    <section class="block-full">
+      <div class="block-head">
+        <div class="block-title">
+          TRUYỆN FULL HOT
+        </div>
+        <div class="arrow-more">›</div>
+      </div>
+
+      <div class="full-grid">
+        <!-- mỗi card -->
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Thụ Thế Thân Thức Tỉnh Rồi</div>
+          <div class="full-chapter-badge">Chương 146</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Tự Cẩm</div>
+          <div class="full-chapter-badge">Chương 836</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Long Phượng Song Bảo...</div>
+          <div class="full-chapter-badge">Chương 2276</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Linh Chu</div>
+          <div class="full-chapter-badge">Chương 2057</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Lấy Chồng Bạc Tỷ</div>
+          <div class="full-chapter-badge">Chương 999</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">19 Ngày</div>
+          <div class="full-chapter-badge">Chương 75</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Khanh Khanh Của Tôi</div>
+          <div class="full-chapter-badge">Chương 98</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Tân Hôn – Bán Tiết...</div>
+          <div class="full-chapter-badge">Chương 101</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Nhân Đạo Chí Tôn</div>
+          <div class="full-chapter-badge">Chương 2389</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Tuyệt Ứng Lĩnh Chủ</div>
+          <div class="full-chapter-badge">Chương 1948</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUYỆN FULL AUDIO ===== -->
+    <section class="block-full">
+      <div class="block-head">
+        <div class="block-title">
+          <span class="bolt">⚡</span> TRUYỆN FULL AUDIO
+        </div>
+        <div class="arrow-more">›</div>
+      </div>
+
+      <div class="full-grid">
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">"Fan Vợ" – Bạn Đã Biết Chưa?</div>
+          <div class="full-chapter-badge">Chương 167</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Gục Trước Dịu Dàng</div>
+          <div class="full-chapter-badge">Chương 88</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Vụng Trộm Không Thể Giấu</div>
+          <div class="full-chapter-badge">Chương 90</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Hào Môn Kinh Mộng</div>
+          <div class="full-chapter-badge">Quyển 8 C52</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Tam Giác Mùa Hè</div>
+          <div class="full-chapter-badge">Chương 62</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Dịu Dàng Tận Xương</div>
+          <div class="full-chapter-badge">Chương 108</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Bổn Vương Ở Đây</div>
+          <div class="full-chapter-badge">Chương 86</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Siêu Cấp Cưng Chiều</div>
+          <div class="full-chapter-badge">Chương 1598</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+          </div>
+          <div class="full-name">Trò Chơi Nguy Hiểm</div>
+          <div class="full-chapter-badge">Chương 200</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Cô Chạy Đằng Trời</div>
+          <div class="full-chapter-badge">Chương 73</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Kiều Sủng Vi Thượng</div>
+          <div class="full-chapter-badge">Chương 81</div>
+        </div>
+
+        <div class="full-card">
+          <div class="full-thumb">
+            <img src="https://via.placeholder.com/200x260?text=Bia" alt="">
+            <div class="book-icon-left">✔</div>
+            <div class="book-icon-right">▶</div>
+          </div>
+          <div class="full-name">Ngoan, Đừng Chạy</div>
+          <div class="full-chapter-badge">Chương 100</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="footer-top-btns">
+        <button class="footer-btn">THẬP NIÊN 80</button>
+        <button class="footer-btn">ĐÓNG GÓP Ý KIẾN</button>
+      </div>
+
+      <p class="footer-desc">
+        Đọc truyện online, đọc truyện chữ, truyện hay. Website luôn cập nhật
+        những bộ truyện mới thuộc các thể loại đặc sắc như truyện tiên hiệp,
+        truyện kiếm hiệp, hay truyện ngôn tình một cách nhanh nhất.
+      </p>
+
+      <p class="footer-desc">
+        Website hoạt động dưới Giấy phép truy cập mở Creative Commons Attribution 4.0 International License
+      </p>
+
+      <ul class="footer-links">
+        <li><a href="#">Chính sách bảo mật</a></li>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+        <li><a href="#">Quy định về nội dung</a></li>
+        <li><a href="#">Thỏa thuận quyền riêng tư</a></li>
+        <li><a href="#">Cảnh báo</a></li>
+        <li><a href="#">Liên hệ: xtruyen.vn@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
