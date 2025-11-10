@@ -54,10 +54,9 @@ img {
 
 .logo-circle img {
     width: 60px;
-    /* kích thước ảnh logo */
+
     height: 60px;
     object-fit: contain;
-    /* giữ tỉ lệ ảnh */
     display: block;
 }
 
