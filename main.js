@@ -15,3 +15,16 @@ if (xemThemBtn) {
         alert("TODO: load thêm truyện mới cập nhật");
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const accountItem = document.querySelector(".nav-item.nav-account");
+    if (!accountItem) return;
+
+    accountItem.addEventListener("click", function (e) {
+        e.stopPropagation();
+        accountItem.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+        accountItem.classList.remove("open");
+    });
+});
