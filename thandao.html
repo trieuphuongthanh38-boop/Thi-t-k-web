@@ -7,6 +7,7 @@
     <title>THẦN ĐẠO ĐAN TÔN</title>
     <link rel="icon" type="image/Mimi.png" href="/image/logo.png">
     <link rel="stylesheet" href="thandao.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <header class="topbar">
         <div class="topbar-inner container">
             <div class="topbar-left">
-                <div class="logo">
+                <a class="logo" href="trangchu.html">
                     <div class="logo-circle">
                         <img src="image/Mimi.png" alt="X logo" class="main-img">
                         <img src="image/logo.png" alt="logo" class="overlay-img">
@@ -22,13 +23,14 @@
                     <div class="logo-text">
                         <div class="logo-line1">TRUYỆN</div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="topbar-right">
                 <nav class="main-nav">
                     <div class="nav-item has-sub">
-                        <span class="nav-icon">☰</span>
+                        <!-- <span class="nav-icon">☰</span> -->
+                        <i class="nav-icon fa-solid fa-list"></i>
                         <span class="nav-text">Danh sách</span>
                         <div class="sub-menu sub-menu-list">
                             <ul>
@@ -42,7 +44,8 @@
 
                     </div>
                     <div class="nav-item has-sub">
-                        <span class="nav-icon">☰</span>
+                        <!-- <span class="nav-icon">☰</span> -->
+                        <i class="nav-icon fa-solid fa-list"></i>
                         <span class="nav-text">Thể Loại</span>
                         <div class="sub-menu sub-menu-category">
                             <ul>
@@ -76,7 +79,8 @@
                         </div>
                     </div>
                     <div class="nav-item has-sub nav-account">
-                        <span class="nav-icon">👤</span>
+                        <!-- <span class="nav-icon">👤</span> -->
+                        <i class=" nav-icon fa-solid fa-user"></i>
                         <span class="nav-text">Tài khoản</span>
                         <div class="sub-menu">
                             <a href="#" class="sub-item">Đăng nhập</a>
@@ -97,15 +101,307 @@
     <main class="page container">
         <div class="breadbar">
             <div class="breadcrumb">
-                <a href="#" class="home-link">&#x1F3E0; Home</a>
+                <i class="home-link fa-solid fa-house"></i>
+                <!-- <a href="#" class="home-link">Home</a> -->
                 <span class="divider">/</span>
                 <a href="#" class="category">Huyền Huyễn</a>
                 <span class="divider">/</span>
                 <span class="current">Thần Đạo Đan Tôn</span>
             </div>
         </div>
+        <section class="story-wrap">
+            <h1 class="story-title">THẦN ĐẠO ĐAN TÔN</h1>
+
+            <div class="story-grid">
+                <!-- LEFT: Cover -->
+                <div class="story-cover">
+                    <img src="image/than-dao-dan-ton.jpg" alt="Thần Đạo Đan Tôn">
+                </div>
+
+                <!-- RIGHT: Info -->
+                <div class="story-info">
+                    <div class="rating-row">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="rating-score">3.6</div>
+                    </div>
+
+                    <div class="info-table">
+                        <div class="info-item">
+                            <div class="k">Đánh giá</div>
+                            <div class="v1">Trung bình 3.6 / 5 của 9399 lượt</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="k">Tác giả</div>
+                            <div class="v">Cô Đơn Địa Phi</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="k">Thể loại</div>
+                            <div class="v">Huyền Huyễn, Tiên Hiệp</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="k">Trạng thái</div>
+                            <div class="v1">Hoàn thành</div>
+                        </div>
+                    </div>
+
+                    <div class="btn-row">
+                        <a class="btn-primary" href="chuong1.html">Chương đầu</a>
+                        <a class="btn-primary" href="chuong1.html">Chương cuối</a>
+                    </div>
+
+                    <div class="latest-row">
+                        <div class="k">Mới nhất</div>
+                        <a class="latest-link" href="#">Chương 8 : Đại Kết Cục</a>
+                    </div>
+
+                    <div class="action-row">
+                        <div class="act">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <div class="act-text">Bình luận</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="act">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <div class="act-text">4 người đã đánh dấu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="section-head">
+                <div class="head-left">
+                    <span class="badge"><i class="fa-solid fa-star"></i></span>
+                    <span class="head-text">TÓM TẮT</span>
+                </div>
+                <button class="audio-btn" title="Nghe truyện" data-audio="tomtatthandao.wav">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+
+            <div class="summary-box">
+                <p>
+                    Lăng Hàn – Một Đan Đế đại danh đỉnh định mang trong thân mình tuyệt thế công pháp vì truy cầu bước
+                    cuối, xé bỏ tấm màn thành thần nhưng thất bại đã phải bỏ mình. Thế nhưng ông trời dường như không
+                    muốn tuyệt dường người, Lăng Hàn đã được trọng sinh vào một thiếu niên cùng tên và điều may mắn nhất
+                    là “Bất Diệt Thiên Kinh” ấn ký vẫn còn nằm nguyên trong tâm thức hắn.
+                    <br>
+                    <br>
+                    Từ nay về sau sóng gió cuộn trào nổi lên, Đan Đế ngày xưa bây giờ phải cùng tranh phong với vô số
+                    thiên tài trẻ tuổi, lại bắt đầu một truyền thuyết mới như để chứng minh với trời đất: Ta, là người
+                    mạnh nhất!
+                    <br>
+                    <br>
+                    Phân chia cảnh giới: Luyện Thể, Tụ Nguyên, Dũng Tuyền, Linh Hải, Thần Thai, Sinh Hoa, Linh Anh, Hóa
+                    Thần cùng Thiên Nhân Cảnh…..
+                    <br> <br>
+                    Mỗi cảnh giới chia làm chín tầng: tầng một đến ba là tiền kỳ, tầng bốn đến sáu gọi là trung kỳ và
+                    tầng bảy đến chín gọi là hậu kỳ và đỉnh
+                    <br> <br>
+                    Cảnh giới Đan Sư: Hoàng cấp,Huyền cấp, Địa cấp, Thiên cấp…
+                    <br> <br>
+                    Thần Cảnh: Nhật Nguyệt Cảnh, Sơn Hà Cảnh, Tinh Thần Cảnh, Hằng Hà Cảnh, Sáng Thế Cảnh
+                    <br> <br>
+                    Mỗi cảnh giới chia làm: Tiểu Cực Vị, Trung Cực Vị, Đại Cực Vi, Đại Viên Mãn trong một Cực Vị lại
+                    chia làm: Tiền kỳ, Trung kỳ, Hậu kỳ, Viên mãn
+                    <br> <br>
+                    Cảnh giới Tiên Vực:Trảm Trần Cảnh (Nhất Trảm-Nhị Trảm-Tam Trảm-Tứ Trảm-Ngũ Trảm),Phân Hồn Cảnh
+                    (Dương Hồn-Âm Hồn-Thiên Hồn-Địa Hồn), Tiên Phủ Cảnh, Thăng Nguyên Cảnh, Tiên Vương có 9 tầng từ 1
+                    đến 9, bên trên Tiên Vương là Thiên Tôn
+                    <br> <br>
+                    Cảnh giới Đan Sư ở Tiên Vực: Nhất Tinh, Nhị Tinh, Tam Tinh, Tứ Tinh,Ngũ Tinh Đan Sư
+                </p>
+            </div>
+            <!-- ===== DANH SÁCH CHƯƠNG ===== -->
+            <div class="chapter-wrap">
+                <div class="section-head">
+                    <div class="head-left">
+                        <span class="badge"><i class="fa-solid fa-star"></i></span>
+                        <span class="head-text">DANH SÁCH CHƯƠNG</span>
+                    </div>
+                    <button class="sort-icon" id="sortChapterBtn">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
+                    </button>
+                </div>
+
+                <div class="chapter-list">
+                    <div class="chapter-row">
+                        <span class="part">Chương 1: Sống lại</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="part">Chương 2: Cường thể</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="part">Chương 3: Ngươi có bệnh, ta có thể trị</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="part">Chương 4: Thiên Dược Các</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row">
+                        <span class="part">Chương 5: Thôn phệ diễm hỏa</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row is-hidden">
+                        <span class="part">Chương 6: Viêm trọng xích</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row is-hidden">
+                        <span class="part">Chương 7: Diệt sạch Hồn Điện</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row is-hidden">
+                        <span class="part">Chương 8: Đại kết cục</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row is-hidden">
+                        <span class="part">Chương 9: Đại cưới vợ</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="chapter-row is-hidden">
+                        <span class="part">Chương 10: Một tay 10 em</span>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                <div class="chapter-more">
+                    <button id="btnMoreChapter" class="btn-more">
+                        <span class="plus-blue">+</span> Xem thêm
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== TRUYỆN LIÊN QUAN ===== -->
+            <div class="related-wrap">
+                <div class="related-head">
+                    <span class = "badge"><i class="fa-solid fa-bars"></i></span>
+                    <span class = "head-text">Truyện liên quan</span>
+                </div>
+
+                <div class="related-grid">
+                    <div class="rel-card" href="#">
+                        <div class="rel-thumb">
+                            <img src="image/linh-chu.jpg" alt="Ta Là Chí Tôn">
+                            <div class="rel-meta">
+                                <span><i class="fa-regular fa-eye"></i> 509747</span>
+                                <span><i class="fa-regular fa-comment"></i> 324</span>
+                                <span><i class="fa-regular fa-heart"></i> 5.411</span>
+                            </div>
+                        </div>
+                        <div class="rel-title">Ta Là Chí Tôn</div>
+                    </div>
+
+                    <a class="rel-card" href="#">
+                        <div class="rel-thumb">
+                            <img src="image/linh-vu-thien-ha.jpg" alt="Soko No Koisuru Baitosho-Kun">
+                            <div class="rel-meta">
+                                <span><i class="fa-regular fa-eye"></i> 77133</span>
+                                <span><i class="fa-regular fa-comment"></i> 324</span>
+                                <span><i class="fa-regular fa-heart"></i> 5.411</span>
+                            </div>
+                        </div>
+                        <div class="rel-title">Solo Levling</div>
+                    </a>
+
+                    <a class="rel-card" href="#">
+                        <div class="rel-thumb">
+                            <img src = "image/long-phuong-song-bao-vo-bau-lai-muon-chay.jpg">
+                            <div class="rel-meta">
+                                <span><i class="fa-regular fa-eye"></i> 128625</span>
+                                <span><i class="fa-regular fa-comment"></i> 324</span>
+                                <span><i class="fa-regular fa-heart"></i> 5.411</span>
+                            </div>
+                        </div>
+                        <div class="rel-title">Boku-no-pico</div>
+                    </a>
+
+                    <a class="rel-card" href="#">
+                        <div class="rel-thumb">
+                            <img src="image/vu-than-chua-te.jpg" alt="Sayonara Peter Pan">
+                            <div class="rel-meta">
+                                <span><i class="fa-regular fa-eye"></i> 28543</span>
+                                <span><i class="fa-regular fa-comment"></i> 324</span>
+                                <span><i class="fa-regular fa-heart"></i> 5.411</span>
+                            </div>
+                        </div>
+                        <div class="rel-title">Sayonara Peter Pan</div>
+                    </a>
+                    <a class="rel-card" href="#">
+                        <div class="rel-thumb">
+                            <img src="image/de-ba.jpg" alt="Sayonara Peter Pan">
+                            <div class="rel-meta">
+                                <span><i class="fa-regular fa-eye"></i> 28543</span>
+                                <span><i class="fa-regular fa-comment"></i> 324</span>
+                                <span><i class="fa-regular fa-heart"></i> 5.411</span>
+                            </div>
+                        </div>
+                        <div class="rel-title">Bê đê yêu lét biên</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COMMENTS -->
+            <div class="comment-wrap">
+                <div class="section-head simple">
+                    <div class="head-left">
+                        <span class="badge"><i class="fa-regular fa-comment-dots"></i></span>
+                        <span class="head-text">CẢM NGHĨ CỦA BẠN</span>
+                    </div>
+                </div>
+
+                <div class="feel-row">
+                    <div class="emo"><span>👍</span>
+                        <div class="n">5</div>
+                    </div>
+                    <div class="emo"><span>😝</span>
+                        <div class="n">3</div>
+                    </div>
+                    <div class="emo"><span>😍</span>
+                        <div class="n">4</div>
+                    </div>
+                    <div class="emo"><span>😮</span>
+                        <div class="n">5</div>
+                    </div>
+                    <div class="emo"><span>😤</span>
+                        <div class="n">5</div>
+                    </div>
+                    <div class="emo"><span>😢</span>
+                        <div class="n">5</div>
+                    </div>
+                </div>
+
+                <div class="note">
+                    Thông tin của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *
+                </div>
+
+                <div class="form-row">
+                    <textarea class="input" rows="4" placeholder="Bình luận"></textarea>
+
+                    <div class="form-bottom">
+                        <div class="name-block">
+                            <label class="lbl">Tên</label>
+                            <input class="input" type="text" placeholder="Tên">
+                            <label class="save">
+                                <input type="checkbox"> Lưu tên trong trình duyệt .
+                            </label>
+                        </div>
+
+                        <button class="send-btn">Gửi bình luận</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
         <div class="footer-inner container">
@@ -134,7 +430,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="./thandao.js"></script>
 </body>
 
 </html>

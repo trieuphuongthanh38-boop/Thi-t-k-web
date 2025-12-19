@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Đăng nhập & Đăng ký</title>
+  <!-- Liên kết đến file CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- Nút mở modal demo -->
+  <!-- Nút mở modal demo -->
+<div class="button-container">
+  <button id="openLogin" class="open-btn">Mở Đăng Nhập</button>
+  <button id="openRegister" class="open-btn">Mở Đăng Ký</button>
+</div>
+
+  <!-- Modal ĐĂNG NHẬP -->
+  <div class="overlay hidden" id="loginOverlay">
+    <div class="modal">
+      <button class="close-btn" id="closeLogin">✕</button>
+      <h2>ĐĂNG NHẬP</h2>
+
+      <div class="form-row">
+        <label class="input-label">Email</label>
+        <input type="email" class="input-underline" placeholder="Nhập email">
+        <span class="input-icon">📧</span>
+      </div>
+
+      <div class="form-row">
+        <label class="input-label">Mật khẩu</label>
+        <input type="password" class="input-underline" placeholder="Nhập mật khẩu">
+        <span class="input-icon">🔒</span>
+      </div>
+
+      <div class="row-between">
+        <label class="checkbox"><input type="checkbox"> Ghi nhớ</label>
+        <a href="#" class="link">Quên mật khẩu</a>
+      </div>
+
+      <button class="btn-primary">ĐĂNG NHẬP</button>
+
+      <div class="subtle">Chưa có tài khoản? <a href="#" id="toRegister" class="link">Đăng ký</a></div>
+    </div>
+  </div>
+
+  <!-- Modal ĐĂNG KÝ -->
+  <div class="overlay hidden" id="registerOverlay">
+    <div class="modal">
+      <button class="close-btn" id="closeRegister">✕</button>
+      <h2>ĐĂNG KÝ</h2>
+
+      <div class="form-row">
+        <label class="input-label">Email</label>
+        <input type="email" class="input-underline" placeholder="Nhập email">
+        <span class="input-icon">📧</span>
+      </div>
+
+      <div class="form-row">
+        <label class="input-label">Mật khẩu</label>
+        <input type="password" class="input-underline" placeholder="Nhập mật khẩu">
+        <span class="input-icon">🔒</span>
+      </div>
+
+      <div class="form-row">
+        <label class="input-label">Nhập lại mật khẩu</label>
+        <input type="password" class="input-underline" placeholder="Nhập lại mật khẩu">
+        <span class="input-icon">🔁</span>
+      </div>
+
+      <label class="checkbox" style="margin-bottom:16px;">
+        <input type="checkbox"> Đồng ý điều khoản
+      </label>
+
+      <button class="btn-primary">ĐĂNG KÝ</button>
+
+      <div class="subtle">Đã có tài khoản? <a href="#" id="toLogin" class="link">Đăng nhập</a></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
